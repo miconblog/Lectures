@@ -20,6 +20,15 @@
 	backgroundColor: "red"
 },
 
+".photo_ios" : {
+	width: 80,
+	height: 80,
+	bottom: 10,
+	top: 10,
+	right: 10,
+	backgroundColor: "red"
+}
+
 ".name" : {
 	top: 10,
 	left: 100

@@ -1,0 +1,6 @@
+<Alloy>
+	<TabGroup>
+		<Require src="Window1"></Require>
+		<Require src="Window2"></Require>
+	</TabGroup>
+</Alloy>

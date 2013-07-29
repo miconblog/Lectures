@@ -4,4 +4,26 @@ function testClick(e) {
 
 $.window.open();
 
+if( OS_IOS ){
+    var x = "ios";
+    
+}
 
+if( OS_ANDROID ){
+    var x = "android";
+}
+
+
+alert(x);
+
+
+var osname = Ti.Platform.osname;
+if( osname == "android" ){
+    
+    
+}
+
+if( osname == "ios" ){
+    
+    
+}

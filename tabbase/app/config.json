@@ -1,0 +1,13 @@
+{
+	"global": {}, 
+	"env:development": {}, 
+	"env:test": {}, 
+	"env:production": {}, 
+	"os:ios": {
+        "theme": "ios-theme"
+    },
+    "os:android": {
+        "theme": "my-theme"
+    },
+	"dependencies": {}
+}

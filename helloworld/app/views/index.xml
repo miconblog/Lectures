@@ -6,7 +6,8 @@
 		<TableView id="table">
 			<TableViewSection id="sectionFruit" headerTitle="Fruit">
 				<TableViewRow title="Apple">
-					<ImageView class="photo"></ImageView>
+					<ImageView platform="ios" class="photo"></ImageView>
+					<ImageView platform="android" class="photo_ios"></ImageView>
 					<Label class="name">이름</Label>
 					<Label class="today">오늘의 한마디</Label>				
 				</TableViewRow>
