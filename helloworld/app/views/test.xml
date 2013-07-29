@@ -1,4 +1,5 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<Window id="window" class="container">
+		<Label id="title">서브 윈도우</Label>
+	</Window>
 </Alloy>

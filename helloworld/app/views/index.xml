@@ -5,29 +5,13 @@
 		<View id="view3"></View -->
 		<TableView id="table">
 			<TableViewSection id="sectionFruit" headerTitle="Fruit">
-				<TableViewRow title="Apple">
-					<ImageView platform="ios" class="photo"></ImageView>
-					<ImageView platform="android" class="photo_ios"></ImageView>
+				<TableViewRow title="Apple" onClick="onOpenDetail">
+					<ImageView platform="android" class="photo"></ImageView>
+					<ImageView platform="ios" class="photo_ios"></ImageView>
 					<Label class="name">이름</Label>
 					<Label class="today">오늘의 한마디</Label>				
 				</TableViewRow>
 				<TableViewRow title="Bananas"/>
-				<TableViewRow title="Apple"/>
-				<TableViewRow title="Bananas"/>
-				<TableViewRow title="Apple"/>
-				<TableViewRow title="Bananas"/>
-			</TableViewSection>
-			<TableViewSection id="sectionVeg" headerTitle="Vegetables">
-				<TableViewRow title="Carrots"/>
-				<TableViewRow title="Potatoes"/>
-				<TableViewRow title="Apple"/>
-				<TableViewRow title="Bananas"/>
-				<TableViewRow title="Apple"/>
-				<TableViewRow title="Bananas"/>
-			</TableViewSection>
-			<TableViewSection id="sectionFish" headerTitle="Fish">
-				<TableViewRow title="Cod"/>
-				<TableViewRow title="Haddock"/>
 				<TableViewRow title="Apple"/>
 				<TableViewRow title="Bananas"/>
 				<TableViewRow title="Apple"/>
