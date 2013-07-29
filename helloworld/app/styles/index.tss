@@ -1,0 +1,52 @@
+".container": {
+	backgroundColor: "white",
+	fullscreen: false,
+	layout: "horizontal",
+	horizontalWrap: false
+},
+
+"View" : {
+	left: 20,
+	top: 20
+},
+
+
+".photo" : {
+	width: 80,
+	height: 80,
+	bottom: 10,
+	top: 10,
+	left: 10,
+	backgroundColor: "red"
+},
+
+".name" : {
+	top: 10,
+	left: 100
+},
+
+".today" : {
+	top: 40,
+	left: 100
+}
+
+
+"#view1": {
+	backgroundColor: "red",
+	width: 130,
+	height: 130
+},
+
+"#view2": {
+	backgroundColor: "green",
+	width: 150,
+	height: 150
+},
+
+"#view3": {
+	backgroundColor: "black",
+	width: 160,
+	height: 160
+}
+
+

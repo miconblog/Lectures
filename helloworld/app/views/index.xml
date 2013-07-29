@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="window" class="container">
+		<!--View id="view1"></View>
+		<View id="view2"></View>
+		<View id="view3"></View -->
+		<TableView id="table">
+			<TableViewSection id="sectionFruit" headerTitle="Fruit">
+				<TableViewRow title="Apple">
+					<ImageView class="photo"></ImageView>
+					<Label class="name">이름</Label>
+					<Label class="today">오늘의 한마디</Label>				
+				</TableViewRow>
+				<TableViewRow title="Bananas"/>
+				<TableViewRow title="Apple"/>
+				<TableViewRow title="Bananas"/>
+				<TableViewRow title="Apple"/>
+				<TableViewRow title="Bananas"/>
+			</TableViewSection>
+			<TableViewSection id="sectionVeg" headerTitle="Vegetables">
+				<TableViewRow title="Carrots"/>
+				<TableViewRow title="Potatoes"/>
+				<TableViewRow title="Apple"/>
+				<TableViewRow title="Bananas"/>
+				<TableViewRow title="Apple"/>
+				<TableViewRow title="Bananas"/>
+			</TableViewSection>
+			<TableViewSection id="sectionFish" headerTitle="Fish">
+				<TableViewRow title="Cod"/>
+				<TableViewRow title="Haddock"/>
+				<TableViewRow title="Apple"/>
+				<TableViewRow title="Bananas"/>
+				<TableViewRow title="Apple"/>
+				<TableViewRow title="Bananas"/>
+			</TableViewSection>
+		</TableView>
+
+	</Window>
+</Alloy>
