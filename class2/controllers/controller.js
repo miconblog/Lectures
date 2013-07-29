@@ -2,7 +2,7 @@
     
     var model = new Model();
     var view = new View(model);
+       
+    model.set("x", 30); 
     
-    
-    model.set("x", 30);
 })()
