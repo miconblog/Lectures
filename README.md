@@ -127,15 +127,14 @@ git 프로젝트 import 하기 ([모듈 링크][3])
 - 실습 예제3. 한국어 버전 사용하기
 
 
-### Best Practices
-자바스크립트의 일반적인 권고사항
+### 자바스크립트의 일반적인 권고사항
 
 * 1) 전역 스코프를 쓰지마라. 
 * 2) 전역 이벤트 리스너에 지역변수를 할당하지 마라. 
 * 전역 스코프에 이벤트를 걸경우엔 app.js 에서 코드를 넣어서 관리해라!
-  예시)
+  Ti.App, Ti.Geolocation, Ti.Gesture 이것들 외에도 UI 요소에 이벤트 할당할때도 비슷한 문제가 있다.
+
 ```
-    Ti.App, Ti.Geolocation, Ti.Gesture 이것들 외에도 UI 요소에 이벤트 할당할때도 비슷한 문제가 있다.
     var table = Ti.UI.createTableView();
     Ti.App.addEventListener('bad:move', function(e) {
         table.setData(e.data);
