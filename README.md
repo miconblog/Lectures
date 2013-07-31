@@ -26,9 +26,11 @@ Lectures
     https://github.com/yomybaby/TiStudy/wiki
        
 - alloy 1.2 컴파일 설정
-    git clone https://github.com/appcelerator/alloy.git
-    cd alloy
-    npm install -g .
+```
+$> git clone https://github.com/appcelerator/alloy.git
+$> cd alloy
+$> npm install -g .
+```
 
 ## Javascript Basic with HTML
 크롬 개발자 도구를 이용해서 실습 진행
