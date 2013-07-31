@@ -22,8 +22,8 @@ Lectures
 ## 강의 준비사항 점검
 타이타늄 설치 확인 및 필요한 SDK 다운받기
 
-- fastdev 및 android avd 설정
-    https://github.com/yomybaby/TiStudy/wiki
+- [fastdev 및 android avd 설정][1]
+[1]:https://github.com/yomybaby/TiStudy/wiki
        
 - alloy 1.2 컴파일 설정
 ```
@@ -82,9 +82,9 @@ Alloy로 첫번재 타이타늄 앱 빌드 해보기
 
 > Tips) 
 > - Ti.Platform API를 자주 사용하면 느리다. 캐시해라!
-> - [해상도 문제][1]
+> - [해상도 문제][2]
 
-[1]:http://oniz.tistory.com/114
+[2]:http://oniz.tistory.com/114
   
 
 ## 뷰 이벤트 처리 
@@ -92,8 +92,8 @@ Alloy로 첫번재 타이타늄 앱 빌드 해보기
 
 
 ## 타이타늄 모듈 사용하기 
-git 프로젝트 import 하기 
-> https://github.com/billdawson/ti-android-animation
+git 프로젝트 import 하기 ([모듈 링크][3])
+[3]:https://github.com/billdawson/ti-android-animation
   
 모듈 설치 방법 
 > - 전역: /Users/realrap/Library/Application Support/Titanium/modules/[플랫폼]/[모듈이름]/[버전]
