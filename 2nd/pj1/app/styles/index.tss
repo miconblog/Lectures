@@ -1,0 +1,32 @@
+"#window": {
+	backgroundColor:"white",
+	layout : "vertical",
+	horizontalWrap : false
+},
+".view" : {
+	width : 100,
+	height: 100
+},
+"#v1" : {
+	left : 50,
+	top : 50,
+	backgroundColor : "red"
+},
+"#v2" : {
+	left: 50,
+	top : 50,
+	backgroundColor : "blue"
+},
+"#v3" : {
+	left: 50,
+	top : 50,
+	backgroundColor : "yellow"
+},
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+},
+"#id" : {
+	
+} 

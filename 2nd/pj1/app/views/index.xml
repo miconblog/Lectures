@@ -1,0 +1,11 @@
+<Alloy>
+	<Window id="window" class="container">
+		<View id="v1" class="view">
+			<Button onClick="handleOpenWindow" >OpenWindow </Button>
+		</View>
+		<View id="v2" class="view"><Label>View2</Label></View>
+		<View id="v3" class="view"><Label>View3</Label></View>
+		
+			
+	</Window>
+</Alloy>

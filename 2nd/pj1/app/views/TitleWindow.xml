@@ -1,0 +1,7 @@
+<Alloy>
+	<Window  id="window">
+		<WebView src="http://naver.com"></WebView>
+		<Button platform="ios" onClick="handleClose">Close</Button>
+			
+	</Window>
+</Alloy>
