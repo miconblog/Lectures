@@ -9,3 +9,10 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+var model = Alloy.Models.instance("Members");
+var moment = require('alloy/moment');
+
+model.set("title", "안녕하세요.");
+model.set("date", moment().format("LL"));
+
+console.log(">>>>>>>>>>>>", JSON.stringify(model));

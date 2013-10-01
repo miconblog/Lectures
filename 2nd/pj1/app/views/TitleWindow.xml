@@ -1,7 +1,9 @@
 <Alloy>
+	<Model src="Members"></Model>
 	<Window  id="window">
-		<WebView src="http://naver.com"></WebView>
-		<Button platform="ios" onClick="handleClose">Close</Button>
+		<Label id="title">타이틀</Label>
+		<Label id="date">날짜</Label>
+		<Button onClick="handleClose">Close</Button>
 			
 	</Window>
 </Alloy>

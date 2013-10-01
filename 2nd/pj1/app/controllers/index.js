@@ -1,6 +1,11 @@
 function handleOpenWindow (e){
-    var controller = Alloy.createController("TitleWindow").getView();
-    controller.open(); 
+    
+    openFixedPostionWindow(e.x, e.y);
+}
+
+function openFixedPostionWindow (left, top){
+    var win = Alloy.createController("TitleWindow").getView();
+    win.open(); 
 }
 
 $.window.open();

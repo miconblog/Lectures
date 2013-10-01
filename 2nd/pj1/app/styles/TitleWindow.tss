@@ -2,4 +2,20 @@
 "#window" : {
   backgroundColor : "white",
   fullscreen: false
+},
+"Button" : {
+	width : 80,
+	height: 48,
+	top : 200
+},
+"Label" : {
+	width : 200
+}
+"#title" : {
+	top : 20,
+	color : "red"
+},
+"#date" : {
+	top : 100,
+	color : "#CCC"
 }
