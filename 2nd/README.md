@@ -43,9 +43,11 @@
   ```
   - 안드로이드 fastdev 설정하기
     - ~/.android/avd 폴더에서 에뮬레이터 확인하기
-  - **Tips**
-        - 맥에서 숨은 폴더 보이기(YES)/숨기기(NO)
-        - defaults write com.apple.Finder AppleShowAllFiles YES
+  - **Tips**  
+        - 맥에서 숨은 폴더 보이기(1)/숨기기(0)  
+        ``` 
+        defaults write com.apple.finder AppleShowAllFiles 1
+        ```
  
 [4]: https://github.com/yomybaby/TiStudy/wiki/Titanium-%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-%EC%84%B8%ED%8C%85
 
