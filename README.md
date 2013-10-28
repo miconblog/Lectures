@@ -7,3 +7,8 @@ Lectures
 ### 2nd, [강의 노트][2]
 2013년 10월 1일 블로터 아카데미에서 진행된 타이타늄 강좌 첫째날 노트입니다. 
 [2]: https://github.com/miconblog/Lectures/tree/master/2nd
+
+### 2013.10.31 - HTML5 Day 
+[Simple Javascript MVC 예제][3]
+
+[3]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/index.html
