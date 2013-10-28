@@ -11,4 +11,4 @@ Lectures
 ### 2013.10.31 - HTML5 Day 
 [Simple Javascript MVC 예제][3]
 
-[3]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/index.html
+[3]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/
