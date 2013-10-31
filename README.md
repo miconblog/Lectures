@@ -10,5 +10,11 @@ Lectures
 
 ### 2013.10.31 - HTML5 Day 
 [Simple Javascript MVC 예제][3]
+* [심플한 자바스크립트 MVC 구현][4]
+* [Event 객체 분리 구현][5]
+* [Backbone 모델로 교체][6]
 
 [3]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/
+[4]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/example1.html
+[5]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/example2.html
+[6]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/example3.html

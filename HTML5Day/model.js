@@ -24,7 +24,7 @@
 			for(var name in events){
 
 				if( name === eventname){
-					events[name].call(null, this, data)
+					events[name](this, data)
 				}
 			}
 
