@@ -14,7 +14,11 @@ Lectures
 * [Event 객체 분리 구현][5]
 * [Backbone 모델로 교체][6]
 
+### 2014.01.09 ~ - 사내 자바스크립트 기본 강의
+* [Day 1, UI 개발 기본][7]  
+
 [3]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/
 [4]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/example1.html
 [5]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/example2.html
 [6]: https://github.com/miconblog/Lectures/tree/master/HTML5Day/example3.html
+[7]: https://github.com/miconblog/Lectures/tree/master/SKP/201401/README.md
