@@ -39,7 +39,7 @@ var MobileCart = {
 
 	var direction = ["left", "right", "up", "down"];
 	$el.on("mouseover", function(){
-		var dir = direction[Math.floor(Math.random() * 1000 % 4)];
+ 		var dir = direction[Math.floor(Math.random() * 1000 % 4)];
 		MobileCart[dir](Math.floor(Math.random() * 1000 % 100 + 10));
 	});
 
