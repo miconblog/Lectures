@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+</head>
+<body>
+	<div id="output"></div>
+	<script type="text/javascript">
+		
+	
+		var Human = $Class({
+			$init : function() {
+				this._htInfo = {};
+			},
+
+			setName : function(sName) {
+				this._htInfo.name = sName;
+			},
+
+			getName : function() {
+				return this._htInfo.name;
+			},
+
+			setAge : function(nAge) {
+				this._htInfo.age = nAge;
+			},
+
+			getAge : function() {
+				return this._htInfo.age;
+			}
+		});
+		
+		var Man = $Class({
+			$init : function() {
+				this._htInfo.sex = "M";
+			},
+
+			getSex : function() {
+				return this._htInfo.sex;
+			},
+			
+			getName: function(){
+				return "바보 아님";
+			}
+		}).extend(Human);
+
+		var john = new Man();
+		var cindy = new Human();
+
+		john.setName('John Parker');
+		john.setAge(30);
+
+		cindy.setName('Cindy Smith');
+		cindy.setAge(27);
+
+		var elOutput = document.getElementById('output');
+		elOutput.innerHTML = john.getSex() + " John : " + john.getName() + ' - ' + john.getAge();
+	</script>
+</body>
+</html>

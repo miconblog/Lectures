@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 디버깅 연습1</title>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <button data-cb="1">Add div</button>
+        <button data-cb="2">Add img</button>
+        <button data-cb="delete">Clear</button>
+        아래에 추가<br/>
+        <div id="appendDiv"></div>
+    </div>
+
+    <script>
+    (function () {
+        var appendDiv = document.getElementById("appendDiv");   // #1
+        document.getElementById("wrapper").addEventListener("click", append);
+     
+        function append(e) {
+            var target = e.target || e.srcElement || event.srcElement;
+            var callbackFunction = callback[target.getAttribute("data-cb")];
+            appendDiv.appendChild(callbackFunction());
+        };
+        var callback = {
+            "1":(function () {
+                var div = document.createElement("div");    // #2
+                div.innerHTML = "1번";
+                return function () {
+                    return div.cloneNode(true);    // #3
+                }
+            }()),
+            "2":(function () {
+                var img = document.createElement("img");
+                img.src = "http://www.google.co.kr/images/srpr/logo3w.png";
+                return function () {
+                    return img.cloneNode(true);
+                }
+            }()),
+            "delete":function () {
+                appendDiv.innerHTML = "";
+            }
+        };
+    }());
+    </script>
+</body>
+</html>

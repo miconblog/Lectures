@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+<script src="../../lib/jindo.desktop.all.js"></script>
+</head>
+<body>
+	<div id="output"></div>
+	<script type="text/javascript">
+		var Human = $Class({
+			_htInfo : {},
+			$init : function() {
+
+			},
+
+			setName : function(sName) {
+				this._htInfo.name = sName;
+			},
+
+			getName : function() {
+				return this._htInfo.name;
+			},
+
+			setAge : function(nAge) {
+				this._htInfo.age = nAge;
+			},
+
+			getAge : function() {
+				return this._htInfo.age;
+			}
+
+		});
+
+		var john = new Human();
+		var cindy = new Human();
+
+		john.setName('John Parker');
+		john.setAge(30);
+
+		cindy.setName('Cindy Smith');
+		cindy.setAge(27);
+
+		var elOutput = document.getElementById('output');
+
+		elOutput.innerHTML = "John : " + john.getName() + ' - ' + john.getAge();
+	</script>
+</body>
+</html>

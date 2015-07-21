@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+<script src="../../lib/jindo.desktop.all.js"></script>
+</head>
+<body>
+	<div>빈 문서를 클릭하세요!</div>
+	<div id="output"></div>
+	<script type="text/javascript">
+
+		var welDoc = $Element(document);
+		var welOutput = $Element('output');
+		var oCache = {};
+		
+		welDoc.$value().onclick = function(evt){
+			evt = evt || window.event;
+			oCache = window.event;
+			welOutput.html(welOutput.html() + '좌표 : ' + oCache.clientX
+					+ ', ' + oCache.clientY + '\n');
+
+			// IE8 이하의 경우 나중에 이벤트객체를 활용하면 제대로 값을 못 얻어옴
+			/*setTimeout(function() {
+
+				welOutput.html(welOutput.html() + '나중에 : ' + oCache.clientX
+						+ ', ' + oCache.clientY + '\n');
+
+			}, 10);*/
+		};
+		
+		setInterval(function(){
+			if( window.event ){
+				console.log( window.event.clientX );
+			}else{
+				console.log("없음", oCache);
+			}
+		}, 1)
+		
+		
+		/*
+		welDoc.attach('click', function(oEvent) {
+			
+			welOutput.html(welOutput.html() + '좌표 : ' + oEvent.pos().pageX
+					+ ', ' + oEvent.pos().pageY + '\n');
+
+			// IE8 이하의 경우 나중에 이벤트객체를 활용하면 제대로 값을 못 얻어옴
+			setTimeout(function() {
+
+				welOutput.html(welOutput.html() + '나중에 : ' + oEvent.pos().pageX
+						+ ', ' + oEvent.pos().pageY + '\n');
+
+			}, 10);
+
+		});*/
+	</script>
+</body>
+</html>

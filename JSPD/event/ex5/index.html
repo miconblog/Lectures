@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+<meta name="viewport" content="width=device-width">
+<script src="../../lib/jindo.desktop.all.js"></script>
+<script src="../../lib/jindo_component.js"></script>
+<style>
+ul#list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#list li {
+	padding: .5em;
+	cursor: default;
+	border-radius: .5em;
+}
+
+li.selected {
+	background-color: #888;
+	color: #fff;
+}
+</style>
+</head>
+<body>
+	<ul id="list">
+		<li class="item"><strong>첫번째</strong> 항목</li>
+		<li class="item">두번째 항목</li>
+		<li class="item">세번째 항목 - <a href="#" id="cant_move">링크</a></li>
+		<li class="item">네번째 항목</li>
+	</ul>
+
+	<script type="text/javascript">
+		/*
+		  @autho
+
+		  */
+		var welList = $Element('list');
+
+		welList.delegate('click', 'li.item', function(oEvent) {
+		  
+		  var aList = welList.queryAll('li');
+		  var nLen = aList.length;
+		  
+		  for (var i = 0; i < nLen; i++) {
+		    aList[i].cssClass('selected', aList[i].$value() === oEvent.element);
+		  }
+		  
+		});
+
+		/*
+		  링크에서 이벤트를 stop 시키고 있어서
+		  링크를 클릭하면 항목이 선택되지 않는 버그 존재
+		 */
+		var welCantMove = $Element('cant_move');
+		welCantMove.attach('click', function(oEvent) {
+			//alert('이동 할 수 없어요');
+			oEvent.stop();
+		});
+	</script>
+</body>
+</html>

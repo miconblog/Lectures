@@ -1,0 +1,2 @@
+[{desc : 'Java short Size(16bit signed)',min : -32768,max : 32767},{desc : 'Java int Size(32bit signed)',min : -2147483648,max : 2147483647},
+{desc : 'Java long Size(64bit signed)',min : -9223372036854775808,max : 9223372036854775807} ]

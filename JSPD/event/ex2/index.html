@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+<meta name="viewport" content="width=device-width">
+<style>
+.block {
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="test1" class="block">
+		<h3>title1</h3>
+		<ul>
+		</ul>
+		<button class="close">close</button>
+	</div>
+	<div id="test2" class="block">
+		<h3>title2</h3>
+		<ul>
+		</ul>
+		<button class="close">close</button>
+	</div>
+</div>
+
+<script type="text/javascript">
+	// A 작업자가 만든 test1의 close 버튼 delegation
+	$("#wrapper").delegate(".block", "click", function(e) {
+		$("#test1").hide();
+	});
+
+	// B 작업자가 만든 test2의 close 버튼 delegation
+	$("#wrapper").delegate(".block", "click", function(e) {
+		$("#test2").hide();
+	});
+</script>
+
+</body>
+</html>

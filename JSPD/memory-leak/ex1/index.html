@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+<link rel="stylesheet" type="text/css" href="http://www.naver.com/css/main_v20120917.css" />
+<script src="http://jindo.nhncorp.com/ajaxui_home/js/jindo.desktop.all.js"></script>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<button onclick="loadPrev();">이전</button>
+		<button onclick="loadNext();">다음</button>
+
+		<div id="cast_article" class="cast_article">
+
+			<div style="" class="atc_top" id="atc_top">
+				<div class="press_sec">
+					<a target="_blank" href="http://www.hani.co.kr/"><img
+						height="16" alt="한겨레"
+						src="//static.naver.net/newscast/2009/0205/143727675390790.gif">
+					</a> <span class="edit">편집<span class="date">09-13 17:21</span><span
+						class="bar">|</span>
+					</span> <a target="_blank" class="btn_ombus"
+						href="http://cafe.naver.com/ArticleList.nhn?search.clubid=19404258&amp;search.menuid=29&amp;search.boardtype=L"><span
+						class="blind">한겨레 편집판</span>의견</a><a class="btn_delmy" href="#"
+						id="btn_sub_p"><span class="blind">한겨레</span>해지</a><span
+						class="bar">|</span><a class="btn_paper"
+						href="http://newscast.naver.com/presscenter/newspaper.nhn?pressId=028"
+						onclick="clickcr(this, 'nws_prs.paper', '028', '', event)">신문지면
+						기사</a>
+
+					<div class="cc_help hide" id="help_readcom2" style="right: 76px;">
+						<dl>
+							<dt class="blind">독자의견</dt>
+							<dd>
+								<p>
+									아래 편집판에 대해 의견주시면 <br> 옴부즈맨의 자료로 활용됩니다.
+								</p>
+							</dd>
+						</dl>
+						<div class="shadow2"></div>
+						<div class="arrow up"></div>
+					</div>
+					<div id="help_readcom3" class="cc_help cc_help2 hide"
+						style="right: 10px; display: none;">
+						<dl>
+							<dt class="blind">구독하기</dt>
+							<dd>
+								<p>
+									언론사 구독을 해지하면 뉴스캐스트 및 <br> <a href="" class="lnk">네이버me</a>구독이
+									동시에 해지됩니다.
+								</p>
+							</dd>
+						</dl>
+						<div class="shadow2"></div>
+						<div class="arrow up"></div>
+					</div>
+					<div id="help_readcom4" class="cc_help cc_help2 hide"
+						style="right: 10px;">
+						<dl>
+							<dt class="blind">구독하기</dt>
+							<dd>
+								<p>
+									일시적인 장애로 구독이 실패했습니다. <br> 잠시 후에 다시 시도해주세요.
+								</p>
+							</dd>
+						</dl>
+						<div class="shadow2"></div>
+						<div class="arrow up"></div>
+					</div>
+				</div>
+			</div>
+			<div style="display: none;" class="paper_top" id="paper_top">
+				<h3>
+					<a href="http://newscast.naver.com/presscenter/newspaper.nhn"
+						onclick="clickcr(this,'nws_pap.title','','',event)">신문지면 톱뉴스</a>
+				</h3>
+				<p>종이신문에 게재된 주요 기사를 오전 7시부터 11시까지 제공합니다.</p>
+			</div>
+			<div class="atc_cnts" id="cast_articles" style="">
+				<ul class="cast_atc cast_atc_v4">
+					<li><a
+						href="http://www.hani.co.kr/arti/society/society_general/551407.html"
+						target="_blank"><strong>인혁당 아내“박정희가 남편 죽였고 박근혜는…”</strong>
+					</a><em class="ctg">톱뉴스</em></li>
+					<li><a
+						href="http://www.hani.co.kr/arti/society/society_general/551456.html"
+						target="_blank">안창호 후보 아들, 군복무중 사시 공부…</a><em class="ctg">사회</em>
+					</li>
+				</ul>
+				<p class="atc_p">
+					<a href="http://www.hani.co.kr/arti/politics/assembly/551444.html"
+						target="_blank"><img
+						src="http://static.naver.net/newscast/2012/0913/1041221687282331.JPG"
+						width="100" height="60"><span class="atc_tit">박근혜
+							‘인혁당’사건때 퍼스트레이디였다</span>
+					</a><em class="ctg">정치</em>
+				</p>
+				<ul class="cast_atc cast_atc_v1">
+					<li><a
+						href="http://www.hani.co.kr/arti/politics/politics_general/551481.html"
+						target="_blank">안철수, 교수들 만나 “대통령 잘할지 고민”</a><em class="ctg">정치</em>
+					</li>
+					<li><a
+						href="http://www.hani.co.kr/arti/economy/economy_general/551504.html"
+						target="_blank">아이폰5 LTE 국내 상륙…요동치는 이통시장</a><em class="ctg">IT</em>
+					</li>
+					<li><a
+						href="http://www.hani.co.kr/arti/opinion/column/551365.html"
+						target="_blank">박근혜 폭주 안철수가 막을 수 있을까</a><em class="ctg">스페셜</em></li>
+					<li><a
+						href="http://www.hani.co.kr/arti/international/arabafrica/551458.html"
+						target="_blank">미 대사 피습 부른 동영상 어떤 내용이길래…</a><em class="ctg">국제</em>
+					</li>
+					<li><a
+						href="http://hani.co.kr/arti/society/society_general/551509.html"
+						target="_blank">“술 덜 깨 착각? 남은 진심조차 버린것”</a><em class="ctg">사회</em>
+					</li>
+					<li><a
+						href="http://www.hani.co.kr/arti/culture/entertainment/551540.html"
+						target="_blank">방문진 일부 이사, 김재철 사장 해임안 제출</a><em class="ctg">문화</em>
+					</li>
+				</ul>
+			</div>
+
+			<div id="news_atc_page" class="page" style="">
+				<span class="num" style="display: none;"><em>1</em> / <span>4</span>
+				</span> <a href="#" title="이전 뉴스캐스트" class="pre"><span class="blind">이전
+						뉴스캐스트</span>
+				</a> <a href="#" title="다음 뉴스캐스트" class="next"><span class="blind">다음
+						뉴스캐스트</span>
+				</a>
+			</div>
+			<div id="cast_action" class="cast_action hide" style="display: none;">
+				<a
+					href="http://newscast.naver.com/presscenter/subject.nhn?subject=A1"
+					class="all">톱뉴스 전체 보기</a>|<a
+					href="http://cafe.naver.com/navernewscast" class="btn_ombus"
+					target="_blank"><span class="blind">톱뉴스 편집판</span>의견</a>
+				<div id="help_readcom" class="cc_help hide">
+					<dl>
+						<dt class="blind">독자의견</dt>
+						<dd>
+							<p>
+								위 편집판에 대해 의견주시면 <br> 옴부즈맨의 자료로 활용됩니다.
+							</p>
+						</dd>
+					</dl>
+					<div class="shadow2"></div>
+					<div class="arrow"></div>
+				</div>
+			</div>
+			<div id="no_300" class="alert" style="display: none;">
+				<strong>일시적인 장애로 뉴스 기사를 가져올 수 없습니다.</strong>
+				<p>잠시 후에 다시 시도해주세요.</p>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		var nCurrentPage = 1;
+		var nMinPageIndex = 1;
+		var nMaxPageIndex = 5;
+
+		var loadPrev = function() {
+			nCurrentPage++;
+			if (nCurrentPage > nMaxPageIndex) {
+				nCurrentPage = nMinPageIndex;
+			}
+			loadPage();
+		};
+
+		var loadNext = function() {
+			nCurrentPage--;
+			if (nCurrentPage < nMinPageIndex) {
+				nCurrentPage = nMaxPageIndex;
+			}
+			loadPage();
+		};
+
+		var loadPage = function() {
+			var oAjax = new $Ajax('load' + nCurrentPage + '.html', {
+				type : 'xhr',
+				method : 'get', // GET 방식으로 통신
+				onload : function(res) {// 요청이 완료되면 실행될 콜백 함수
+					var text = res.text();
+					$('cast_article').innerHTML = text;
+				},
+				timeout : 3, // 3초 이내에 요청이 완료되지 않으면 ontimeout 실행 (생략 시 0)
+				ontimeout : function() {// 타임 아웃이 발생하면 실행될 콜백 함수, 생략 시 타임 아웃이 되면 아무 처리도 하지 않음
+					alert("Timeout!");
+				}
+			});
+			oAjax.request();
+			oAjax = null;
+		}
+	</script>
+</body>
+</html>

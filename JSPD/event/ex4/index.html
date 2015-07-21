@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+<meta name="viewport" content="width=device-width">
+<style>
+ul#layer {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	background-color: #833;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	padding-top: 60px;
+}
+</style>
+</head>
+<body>
+	<ul id="layer">레이어 입니다.</ul>
+	<div id="ctrl">
+		<div>열고 닫는 토글 버튼 </div>
+		<button class="close">닫기</button>
+	</div>
+	<script type="text/javascript">
+		$("#ctrl").delegate(".close", "click", function(e) {
+			$("#layer").hide();
+				
+			e.element.className="open";
+			e.element.innerHTML = "열기";
+		});
+		$("#ctrl").delegate(".open", "click", function(e) {
+			$("#layer").show();
+				
+			e.element.className="close";
+			e.element.innerHTML = "닫기";
+		});
+	</script>
+</body>
+</html>

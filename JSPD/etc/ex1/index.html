@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+	<h1 id="title">배열처럼 보이지만 배열(Array)은 아닌 유사 배열 테스트</h1>
+	<ul>
+		<li>동해물과</li>
+		<li>백두산이</li>
+		<li>마르고</li>
+		<li>닳도록</li>
+	</ul>
+	<div id="output"></div>
+
+	<script type="text/javascript">
+		var elOutput = document.getElementById('output');
+
+		var aList = document.getElementsByTagName('li');
+		var elTitle = document.getElementById('title');
+
+		// 유사배열에 배열에서 쓸 수 있는 함수 사용
+		aList.push(elTitle);
+		elOutput.innerHTML += '==========<br/>';
+
+		for ( var i = 0, nLen = aList.length; i < nLen; i++) {
+			elOutput.innerHTML += aList[i].innerHTML + '<br/>';
+		}
+	</script>
+</body>
+</html>

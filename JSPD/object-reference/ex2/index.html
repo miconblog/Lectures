@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS 트러블슈팅</title>
+</head>
+<body>
+	<button id="button">Hi!</button>
+	<div id="message">
+		Hi. My Name is <span id="name"></span>
+	</div>
+
+	<script type="text/javascript">
+		var Me = function() {
+			this.name = "Javascript";
+
+			this._onClick = function() {
+				document.getElementById("name").innerHTML = this.name;
+			};
+
+			document.getElementById("button").addEventListener("click",
+					this._onClick);
+		};
+
+		new Me();
+	</script>
+</body>
+</html>
